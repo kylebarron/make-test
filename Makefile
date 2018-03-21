@@ -17,3 +17,5 @@ final: dependency1 dependency2
 	# make dependency2
 	bash final.sh
 
+helloworld.log: helloworld.do
+	stata-mp -b do helloworld.do
