@@ -9,8 +9,11 @@ dependency2:
 dependency3:
 	bash dep3.sh
 
-final:
-	make dependency1
-	make dependency2
+final: dependency1 dependency2
+	# Or instead of listing dependencies after final:
+	# you can type `make dependency` within the clause,
+	# like this:
+	# make dependency1
+	# make dependency2
 	bash final.sh
 
